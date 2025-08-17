@@ -119,6 +119,10 @@ const API_SITES = {
         name: '空内容测试源',
         adult: true
     },
+    jinlidj: {
+        api: 'https://www.jinlidj.com/',
+        name: '锦鲤短剧',
+    },
 };
 
 // 定义合并方法
