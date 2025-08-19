@@ -22,6 +22,8 @@ const SITE_CONFIG = {
 
 // API站点配置
 const API_SITES = {
+
+    // **常规影视资源开始**
     dyttzy: {
         api: 'http://caiji.dyttzyapi.com/api.php/provide/vod',
         name: '电影天堂资源',
@@ -114,15 +116,274 @@ const API_SITES = {
         api: 'https://cj.lziapi.com/api.php/provide/vod/',
         name: '量子资源站'
     },
-    testSource: {
-        api: 'https://www.example.com/api.php/provide/vod',
-        name: '空内容测试源',
-        adult: true
-    },
+    // testSource: {
+    //     api: 'https://www.example.com/api.php/provide/vod',
+    //     name: '空内容测试源',
+    //     adult: true
+    // },
     jinlidj: {
         api: 'https://www.jinlidj.com/',
         name: '锦鲤短剧',
     },
+    // 2025.8.19新增
+    aiqiyiziyuan: {
+        api: 'https://iqiyizyapi.com/api.php/provide/vod',
+        name: '爱奇艺资源',
+        adult: false
+    },
+    // 解析未测试
+    doubanziyuan: {
+        api: 'https://caiji.dbzy5.com/api.php/provide/vod/at/josn',
+        name: '豆瓣资源',
+        adult: false
+    },
+    youzhiziyuanku: {
+        api: 'http://api.1080zyku.com/inc/api.php/provide/vod',
+        name: '优质资源库',
+        adult: false
+    },
+    // 解析未测试
+    hongniuziyuan: {
+        api: 'http://hongniuzy2.com/api.php/provide/vod/from/hnm3u8',
+        name: '红牛资源',
+        adult: false
+    },
+    shandianziyuan: {
+        api: 'http://sdzyapi.com/api.php/provide/vod/from/sdm3u8',
+        name: '闪电资源',
+        adult: false
+    },
+    wolongziyuan: {
+        api: 'http://collect.wolongzyw.com/api.php/provide/vod',
+        name: '卧龙资源',
+        adult: false
+    },
+    maotaiziyuan: {
+        api: 'https://caiji.maotaizy.cc/api.php/provide/vod/at/josn',
+        name: '茅台资源',
+        adult: false
+    },
+    wangwangduanju: {
+        api: 'https://wwzy.tv/api.php/provide/vod',
+        name: '旺旺短剧',
+        adult: false
+    },
+    jisuziyuan: {
+        api: 'https://jszyapi.com/api.php/provide/vod/at/json',
+        name: '极速资源',
+        adult: false
+    },
+    baiduziyuan: {
+        api: 'http://api.apibdzy.com/api.php/provide/vod',
+        name: '百度云资源',
+        adult: false
+    },
+    Ukuziyuan: {
+        api: 'http://api.ukuapi.com/api.php/provide/vod',
+        name: '优酷资源',
+        adult: false
+    },
+    tianyiziyuan: {
+        api: 'https://www.911ysw.top/tianyi.php/provide/vod',
+        name: '天翼资源',
+        adult: false
+    },
+    piaolingyingyuan: {
+        api: 'https://p2100.net/api.php/provide/vod',
+        name: '飘零影院',
+        adult: false
+    },
+    aikunziyuan: {
+        api: 'https://ikunzyapi.com/api.php/provide/vod',
+        name: 'iKun资源',
+        adult: false
+    },
+    yinghuaziyuan: {
+        api: 'http://m3u8.apiyhzy.com/api.php/provide/vod',
+        name: '樱花资源',
+        adult: false
+    },
+    xiaomianyangziyuan: {
+        api: 'https://vs.okcdn100.top/api.php/provide/vod',
+        name: '小绵羊资源',
+        adult: false
+    },
+    suboziyuan: {
+        api: 'https://subocj.com/api.php/provide/vod/at/json',
+        name: '速播资源',
+        adult: false
+    },
+    // **常规影视资源结束**
+
+
+
+    // **NSFW资源开始**
+    // 以下资源尽可能采用别名替代，如果仍被监测将在下一版本移除
+    jikunziyuan: {
+        api: 'https://jkunzyapi.com/api.php/provide/vod',
+        name: '鸡坤资源',
+        adult: true
+    },
+    souavziyuan: {
+        api: 'https://api.souavzy.vip/api.php/provide/vod',
+        name: 'souav资源',
+        adult: true
+    },
+    senanguoziyuan: {
+        api: 'https://api.sexnguon.com/api.php/provide/vod',
+        name: '森南资源',
+        adult: true
+    },
+    senlinziyuan: {
+        api: 'http://slapibf.com/api.php/provide/vod',
+        name: '森林资源',
+        adult: true
+    },
+    leboziyuan: {
+        api: 'https://lbapi9.com/api.php/provide/vod',
+        name: '乐播资源',
+        adult: true
+    },
+    fanhaoziyuan: {
+        api: 'http://fhapi9.com/api.php/provide/vod',
+        name: '番号资源',
+        adult: true
+    },
+    didiziyuan: {
+        api: 'https://api.ddapi.cc/api.php/provide/vod',
+        name: '滴滴资源',
+        adult: true
+    },
+    shipin91: {
+        api: 'https://91av.cyou/api.php/provide/vod',
+        name: '美少女资源',
+        adult: true
+    },
+    yutuziyuan: {
+        api: 'https://apiyutu.com/api.php/provide/vod',
+        name: '御兔资源',
+        adult: true
+    },
+    Xxibaoziyuan: {
+        api: 'https://www.xxibaozyw.com/api.php/provide/vod',
+        name: 'X细胞资源',
+        adult: true
+    },
+    yuenanziyuan: {
+        api: 'https://vnzyz.com/api.php/provide/vod',
+        name: '越南资源',
+        adult: true
+    },
+    naixiangxiangziyuan: {
+        api: 'https://naixxzy.com/api.php/provide/vod',
+        name: '奶香香资源',
+        adult: true
+    },
+    yinshuiji: {
+        api: 'https://www.xrbsp.com/api.php/provide/vod',
+        name: '饮水机资源',
+        adult: true
+    },
+    huangguaziyuan: {
+        api: 'https://www.avre06.com/api.php/provide/vod',
+        name: '黄瓜资源',
+        adult: true
+    },
+    ziyuan115: {
+        api: 'https://155api.com/api.php/provide/vod',
+        name: '115资源',
+        adult: true
+    },
+    // 解析未测试
+    baipiao: {
+        api: 'https://www.kxgav.com/api/json.php',
+        name: '白漂资源',
+        adult: true
+    },
+    jumaoziyuan: {
+        api: 'https://to.to-long.com/api.php/provide/vod',
+        name: '橘猫资源',
+        adult: true
+    },
+    jingpinziyuan: {
+        api: 'https://www.jingpinx.com/api.php/provide/vod',
+        name: '精品资源',
+        adult: true
+    },
+    xiaojiziyuan: {
+        api: 'https://api.xiaojizy.live/provide/vod',
+        name: '小鸡资源',
+        adult: true
+    },
+    aosikaziyuanwang: {
+        api: 'http://aosikazy.com/api.php/provide/vod',
+        name: '奥斯卡资源网',
+        adult: true
+    },
+    // 解析未测试
+    AIvinziyuan: {
+        api: 'hhttp://lbapiby.com/api.php/provide/vod/at/json',
+        name: 'AIvin资源',
+        adult: true
+    },
+    shayuziyuan: {
+        api: 'https://shayuapi.com/api.php/provide/vod',
+        name: '鲨鱼资源',
+        adult: true
+    },
+    shileyuan: {
+        api: 'https://xxavs.com/api.php/provide/vod',
+        name: '湿乐园资源',
+        adult: true
+    },
+    // 解析未测试
+    huangsecangkuziyuan: {
+        api: 'https://hsckzy888.com/api.php/provide/vod/at/xml',
+        name: '黄色仓库资源',
+        adult: true
+    },
+    youyiziyuan: {
+        api: 'https://a.uezy.pw/api.php/provide/vod',
+        name: '优异资源',
+        adult: true
+    },
+    CKziyuan: {
+        api: 'https://ckzy.me/api.php/provide/vod',
+        name: 'CK资源',
+        adult: true
+    },
+    xingbaziyuan: {
+        api: 'https://xingba222.com/api.php/provide/vod/at/xml',
+        name: '杏吧资源',
+        adult: true
+    },
+    // 解析未测试
+    xiangnaier: {
+        api: 'https://www.gdlsp.com/api/json.php',
+        name: '香奈儿资源',
+        adult: true
+    },
+    chengren18: {
+        api: 'http://91md.me/api.php/provide/vod',
+        name: '成人18+资源',
+        adult: true
+    },
+    danaiziziyuan: {
+        api: 'https://apidanaizi.com/api.php/provide/vod',
+        name: '大奈资源',
+        adult: true
+    },
+    laosebiziyuan: {
+        api: 'https://apilsbzy1.com/api.php/provide/vod',
+        name: 'LSP资源',
+        adult: true
+    },
+    lajiaoziyuan: {
+        api: 'https://apilj.com/api.php/provide/vod',
+        name: '辣椒资源',
+        adult: true
+    },
+    // **NSFW资源结束**
 };
 
 // 定义合并方法
